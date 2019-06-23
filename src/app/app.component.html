@@ -1,0 +1,33 @@
+<body>
+<div class="container">
+  <h2>
+    Utilisation du réseau de neurones MobileNet dans une application web
+  </h2>
+  <div class="upload" [hidden]="!model">
+    Télécharger une image:
+    <input
+      #fileUpload
+      type="file"
+      id="files"
+      name="files[]"
+      (change)="fileChangeEvent($event)"
+    />
+  </div>
+  <img #chosenImage width="224" height="224" class="sample-image"/>
+  <div>
+    
+    <div class="predictions">
+      <div
+        *ngFor="let class of classes" class="pre"
+      >
+        <div class="nom">
+          {{class.className}}
+        </div>
+        <div class="valeur">
+          {{class.probability.toFixed(3)}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

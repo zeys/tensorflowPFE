@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .sample-image {
+  margin: 20px;
+}
+.container .predictions {
+  margin-top: 20px;
+  width: 100%;
+}
+.pre{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 10px;
+}
+body{
+display: grid;
+height: 100vh;
+place-items:center;
+}
