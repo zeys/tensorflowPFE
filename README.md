@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Comment executer
 
-`npm install` 
-`ng serve` 
+`npm install`   
+`ng serve`   
 allez à `http://localhost:4200/`
 
